@@ -3,7 +3,8 @@
 import { useParams } from "next/navigation";
 
 export default function ProductDetail() {
-  const { id } = useParams();
+  const params = useParams();
+  const id = params?.id as string | undefined;
 
   return (
     <div className="max-w-4xl mx-auto p-6">
